@@ -347,17 +347,17 @@ body footer {
           body main .section5themes .article-themes .box-themes h3 {
             margin-top: 16px;
             padding: 0 7px; }
-    body main .latest-news-section {
+    body main .section6news {
       margin-top: 34px;
       height: 518px;
       clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
       padding-top: 213px;
       text-align: center; }
-      body main .latest-news-section h2 {
+      body main .section6news h2 {
         line-height: 62px;
         margin: 0;
         font-size: 48px; }
-      body main .latest-news-section a {
+      body main .section6news a {
         width: 345px;
         line-height: 56px;
         font-size: 18px;
