@@ -1,0 +1,383 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono";
+  color: #060A24; }
+
+body header {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  padding-left: 16px;
+  padding-right: 12px;
+  align-items: center; }
+  body header nav .menu #checkbox {
+    display: block;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    margin-right: 12px;
+    /*movimiento a cruz*/ }
+    body header nav .menu #checkbox[type="checkbox"]:checked ~ ul {
+      display: block;
+      height: 224px;
+      padding-top: 16px;
+      padding-left: 16px; }
+    body header nav .menu #checkbox:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(2px, 1px); }
+    body header nav .menu #checkbox:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2); }
+    body header nav .menu #checkbox:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(1px, 0px); }
+  body header nav .menu span {
+    display: block;
+    width: 19.23px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000000;
+    z-index: 1;
+    transform-origin: 3px 0px;
+    margin-right: 12px; }
+    body header nav .menu span:first-child {
+      transform-origin: 0% 0%; }
+    body header nav .menu span:nth-last-child(2) {
+      transform-origin: 0% 100%; }
+  body header nav .menu ul {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    background: #0000EC 100%;
+    display: none; }
+    body header nav .menu ul li {
+      display: block;
+      width: 100%;
+      margin-bottom: 24px; }
+      body header nav .menu ul li a {
+        display: block;
+        width: 100%;
+        color: #FFFFFF;
+        line-height: 28px;
+        text-decoration: none; }
+        body header nav .menu ul li a:hover {
+          color: #00F3BB;
+          text-decoration: line-through; }
+body main {
+  margin-top: 29px; }
+  body main .introduction {
+    padding: 0 16px; }
+    body main .introduction h1 {
+      width: 100%;
+      line-height: 42px;
+      font-size: 36px;
+      font-family: "IBM Plex Sans";
+      font-weight: normal;
+      margin-bottom: 16px; }
+      body main .introduction h1 .line-decoration {
+        text-decoration: line-through;
+        font-family: "IBM Plex Sans"; }
+    body main .introduction p {
+      width: 100%;
+      height: 66px;
+      margin-bottom: 36px;
+      font-size: 14px; }
+    body main .introduction button {
+      display: block;
+      width: 100%;
+      line-height: 48px;
+      background: #00F3BB 100%;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      text-decoration: none; }
+      body main .introduction button:hover {
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        color: #FFFFFF; }
+  body main .section2episodes {
+    margin-top: 24px;
+    height: 1203.5px;
+    padding-top: 64px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%); }
+    body main .section2episodes h2 {
+      margin-left: 16px;
+      font-size: 36px;
+      color: #FFFFFF;
+      font-family: "IBM Plex Sans";
+      line-height: 42px;
+      font-weight: normal;
+      margin-bottom: 21px;
+      position: relative; }
+    body main .section2episodes .episodes-box-iframe {
+      display: grid;
+      grid-template: repeat(4, 232px)/298px;
+      gap: 18px;
+      padding: 0 11px; }
+  body main .section3origin {
+    width: 100%;
+    height: 445px;
+    text-align: center; }
+    body main .section3origin img {
+      height: inherit;
+      position: relative;
+      top: -70px;
+      width: 100%;
+      height: 500px; }
+  body main .section-our-posturings {
+    padding: 0 16px;
+    margin-bottom: 54px;
+    margin-top: 27px; }
+    body main .section-our-posturings h2 {
+      line-height: 42px;
+      font-size: 36px;
+      font-family: "IBM Plex Sans";
+      font-weight: normal;
+      margin-bottom: 8px; }
+    body main .section-our-posturings p {
+      line-height: 22px;
+      font-size: 14px; }
+  body main .section4guest h2 {
+    line-height: 42px;
+    font-size: 36px;
+    font-family: "IBM Plex Sans";
+    font-weight: normal;
+    margin-left: 16px;
+    margin-bottom: 14px; }
+  body main .section4guest .imagesguest {
+    display: grid;
+    grid-template-rows: repeat(6, 243px); }
+    body main .section4guest .imagesguest img {
+      height: 243px;
+      width: 100%; }
+  body main .section5themes {
+    margin-top: 48px; }
+    body main .section5themes h2 {
+      line-height: 42px;
+      font-size: 36px;
+      font-family: "IBM Plex Sans";
+      font-weight: normal;
+      margin-left: 16px; }
+    body main .section5themes .box-themes {
+      margin-top: 24px;
+      margin-bottom: 36px; }
+      body main .section5themes .box-themes figure {
+        text-align: center;
+        width: 100%;
+        height: 130px;
+        padding: 13px 0; }
+      body main .section5themes .box-themes h3 {
+        line-height: 32px;
+        text-align: center;
+        font-size: 24px;
+        font-family: "IBM Plex Sans";
+        font-weight: 600; }
+    body main .section5themes .last-element-margin {
+      margin-bottom: 0; }
+  body main .section6news {
+    height: 341px;
+    margin-top: 42px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    padding: 64px 16px 0 16px; }
+    body main .section6news h2 {
+      line-height: 42px;
+      font-size: 36px;
+      font-family: "IBM Plex Sans";
+      color: #FFFFFF;
+      font-weight: normal;
+      text-align: center;
+      margin-left: 16px; }
+    body main .section6news a {
+      display: block;
+      width: 100%;
+      line-height: 48px;
+      margin-top: 36px;
+      background: #00F3BB 100%;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      text-decoration: none; }
+      body main .section6news a:hover {
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        color: #FFFFFF; }
+body footer {
+  height: 121px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  body footer p {
+    width: 227px;
+    line-height: 22px;
+    font-size: 14px;
+    margin: 0 auto; }
+  body footer div {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; }
+    body footer div a {
+      margin-right: 38px;
+      color: #060A24; }
+      body footer div a i {
+        line-height: 28px; }
+    body footer div .rigth-icon {
+      margin: 0; }
+
+@media screen and (min-width: 1080px) {
+  body header {
+    height: 80px;
+    padding: 0 72px; }
+    body header figure {
+      width: 36px;
+      height: 36px; }
+      body header figure img {
+        width: 100%; }
+    body header nav .menu #checkbox {
+      display: none; }
+    body header nav .menu span {
+      display: none; }
+    body header nav .menu ul {
+      display: flex;
+      background: none;
+      position: unset; }
+      body header nav .menu ul li {
+        margin: 0;
+        margin-right: 48px; }
+        body header nav .menu ul li a {
+          color: #060A24; }
+      body header nav .menu ul .rigth-menu {
+        margin: 0; }
+  body main {
+    margin-top: 120px; }
+    body main .introduction {
+      padding-left: 200px; }
+      body main .introduction h1 {
+        line-height: 84px;
+        font-size: 64px;
+        margin: 0; }
+        body main .introduction h1 .point {
+          color: #0000EC; }
+      body main .introduction p {
+        visibility: hidden;
+        width: 628px;
+        height: 48px;
+        font-size: unset;
+        margin-bottom: 56px; }
+        body main .introduction p::before {
+          content: 'El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.';
+          visibility: visible; }
+      body main .introduction button {
+        width: 226px;
+        line-height: 56px;
+        font-size: 18px; }
+    body main .section2episodes {
+      padding-top: 186px;
+      margin-top: 5px;
+      height: 1042.6px;
+      clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%); }
+      body main .section2episodes h2 {
+        line-height: 62px;
+        margin-left: 200px;
+        margin-bottom: 26px;
+        font-size: 48px; }
+      body main .section2episodes .episodes-box-iframe {
+        display: grid;
+        grid-template: repeat(2, 232px)/repeat(2, 584px);
+        gap: 72px;
+        padding: 0 100px; }
+        body main .section2episodes .episodes-box-iframe iframe {
+          width: 100%; }
+    body main .section3origin {
+      width: 457.6px;
+      height: 470px;
+      margin-left: 50px; }
+      body main .section3origin img {
+        width: 90%;
+        height: inherit;
+        top: -160px;
+        left: 170px; }
+    body main .section-our-posturings {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 1510px;
+      right: 256px; }
+      body main .section-our-posturings h2 {
+        line-height: 62px;
+        font-size: 48px;
+        margin-bottom: 24px; }
+      body main .section-our-posturings p {
+        width: 464px;
+        line-height: 24px;
+        font-size: unset; }
+    body main .section4guest {
+      margin-top: 64px; }
+      body main .section4guest h2 {
+        line-height: 62px;
+        font-size: 48px;
+        margin-left: 200px;
+        margin-bottom: 36px; }
+      body main .section4guest .imagesguest {
+        display: grid;
+        grid-template: 364px 364px/repeat(3, 1fr); }
+        body main .section4guest .imagesguest img {
+          height: 364px;
+          width: 100%; }
+    body main .section5themes {
+      margin-top: 64px; }
+      body main .section5themes h2 {
+        line-height: 62px;
+        font-size: 48px;
+        margin-left: 200px;
+        margin-bottom: 56px; }
+      body main .section5themes .article-themes {
+        display: flex;
+        justify-content: center; }
+        body main .section5themes .article-themes .box-themes {
+          margin: 0;
+          width: 260px;
+          text-align: center; }
+          body main .section5themes .article-themes .box-themes h3 {
+            margin-top: 16px;
+            padding: 0 7px; }
+    body main .latest-news-section {
+      margin-top: 34px;
+      height: 518px;
+      clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+      padding-top: 213px;
+      text-align: center; }
+      body main .latest-news-section h2 {
+        line-height: 62px;
+        margin: 0;
+        font-size: 48px; }
+      body main .latest-news-section a {
+        width: 345px;
+        line-height: 56px;
+        font-size: 18px;
+        margin: 36px auto 0 auto; }
+  body footer {
+    height: 95px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100PX; }
+    body footer p {
+      width: 269px;
+      line-height: 28px;
+      font-size: unset;
+      margin: 0; }
+    body footer div {
+      margin-top: 0; }
+      body footer div a {
+        margin-right: 36px; }
+        body footer div a i {
+          font-size: 18px; } }
+
+/*# sourceMappingURL=styles.css.map */
